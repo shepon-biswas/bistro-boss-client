@@ -7,10 +7,16 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 const Category = () => {
   return (
     <>
+      {/* Section Title */}
+      <SectionTitle
+      subHeading={"From 11:00am to 10:00pm"}
+      heading={"Order Online"}
+      ></SectionTitle>
       <div className="my-14">
         <Swiper
           slidesPerView={4}
