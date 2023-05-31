@@ -1,4 +1,3 @@
-import React from "react";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 const Recommended = () => {
@@ -46,7 +45,7 @@ const Recommended = () => {
         <figure>
             <img
             className="w-full h-56 object-cover "
-              src="https://i.ibb.co/wLCxffj/chef-service.jpg"
+              src="https://i.ibb.co/wLCxffj/chef-service.jpgnp"
               alt="Food Item"
             />
             </figure>
