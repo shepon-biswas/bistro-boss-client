@@ -1,17 +1,20 @@
+import { NavLink } from "react-router-dom";
+
+
 const NavBar = () => {
   const navOptions = (
     <>
       <li>
-        <a>Home</a>
+        <NavLink to={"/"}>Home</NavLink>
       </li>
       <li>
-        <a>Our Menu</a>
+      <NavLink to={"/menu"}>Our Menu</NavLink>
       </li>
       <li>
-        <a>Contact Us</a>
+      <NavLink to={"/contact"}>Contact Us</NavLink>
       </li>
       <li>
-        <a>Shop Location</a>
+      <NavLink to={"/shoplocation"}>Shop Location</NavLink>
       </li>
     </>
   );
