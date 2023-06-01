@@ -19,7 +19,7 @@ const FoodCard = ({item}) => {
               {recipe}
             </p>
             <div className="card-actions ">
-              <button className="btn btn-primary my-3">Add To Cart</button>
+              <button className="btn btn-outline bg-slate-200 border-0 border-b-4 border-orange-500 my-3">Add To Cart</button>
             </div>
           </div>
         </div>

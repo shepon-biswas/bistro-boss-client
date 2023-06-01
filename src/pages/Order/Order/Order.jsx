@@ -5,6 +5,7 @@ import useMenu from "../../../hooks/useMenu";
 import CategoryTabCard from "../CategoryTabCard/CategoryTabCard";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Order = () => {
     const categories = ['salad', 'pizza', 'soup', 'dessert', 'drinks'];
@@ -12,15 +13,16 @@ const Order = () => {
     const initialIndex = categories.indexOf(category);
     const [tabIndex, SetTabIndex] = useState(initialIndex)
 
-
     const [menu] = useMenu();
     const soup = menu.filter(item => item.category ==="soup");
     const dessert = menu.filter(item => item.category ==="dessert");
     const pizza = menu.filter(item => item.category ==="pizza");
     const salad = menu.filter(item => item.category ==="salad");
     const drinks = menu.filter(item => item.category ==="drinks");
+
   return (
     <>
+        <Helmet title="Order Food | Bistro Boss Restaurent"></Helmet>
       <Cover
         img={"https://i.ibb.co/NsDzXtD/banner2.jpg"}
         title={"Order Food"}
