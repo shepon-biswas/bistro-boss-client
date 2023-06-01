@@ -10,7 +10,7 @@ const Menu = () => {
     const dessert = menu.filter(item => item.category ==="dessert");
     const pizza = menu.filter(item => item.category ==="pizza");
     const salad = menu.filter(item => item.category ==="salad");
-    const drinks = menu.filter(item => item.category ==="drinks");
+    const soup = menu.filter(item => item.category ==="soup");
     return (
         <>
         <Helmet>
@@ -26,12 +26,12 @@ const Menu = () => {
             <SectionTitle subHeading={"Don't Miss"} heading={"Tody's Offfer"}></SectionTitle>
             <MenuCategory items={offered}></MenuCategory>
             {/* Desserets Items */}
-            <MenuCategory items={dessert} title={"Dessert"} coverImg={"https://i.ibb.co/b5q59nW/dessert-bg.jpg"}></MenuCategory>
+            <MenuCategory items={dessert} title={"dessert"} coverImg={"https://i.ibb.co/b5q59nW/dessert-bg.jpg"}></MenuCategory>
             {/* Pizza Items */}
-            <MenuCategory items={pizza} title={"Pizza"} coverImg={"https://i.ibb.co/b5q59nW/dessert-bg.jpg"}></MenuCategory>
+            <MenuCategory items={pizza} title={"pizza"} coverImg={"https://i.ibb.co/b5q59nW/dessert-bg.jpg"}></MenuCategory>
             {/* Salad items */}
-            <MenuCategory items={salad} title={"Salad"} coverImg={"https://i.ibb.co/VCLLP7Q/salad-bg.jpg"}></MenuCategory>
-            <MenuCategory items={drinks} title={"drinks"} coverImg={"https://i.ibb.co/D9phNnZ/banner.jpg"}></MenuCategory>
+            <MenuCategory items={salad} title={"salad"} coverImg={"https://i.ibb.co/VCLLP7Q/salad-bg.jpg"}></MenuCategory>
+            <MenuCategory items={soup} title={"soup"} coverImg={"https://i.ibb.co/D9phNnZ/banner.jpg"}></MenuCategory>
 
         </>
     );

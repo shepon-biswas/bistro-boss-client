@@ -5,4 +5,18 @@
 .carousel .thumbs-wrapper{
     text-align: center;
 }
+.react-tabs__tab-list{
+    border: none !important;
+}
 
+.react-tabs__tab{
+    border: 2px solid orange !important;
+    border-radius: 5px;
+    padding: 15px 30px !important;
+    font-weight: 700;
+}
+.react-tabs__tab--selected{
+    background-color: orange !important; 
+    border: none !important;
+    color: white !important;
+}

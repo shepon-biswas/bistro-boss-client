@@ -30,7 +30,7 @@ import Order from "../pages/Order/Order/Order";
           element: <Contact></Contact>
         },
         {
-          path:"/order",
+          path:"/order/:category",
           element: <Order></Order>
         }
       ]
