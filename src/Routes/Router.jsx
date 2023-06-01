@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home/Home";
 import Menu from "../pages/OurMenu/Menu/Menu";
 import ShopLocation from "../pages/ShopLocation/ShopLocation";
 import Contact from "../pages/Contact/Contact";
+import Order from "../pages/Order/Order/Order";
 
   export const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ import Contact from "../pages/Contact/Contact";
         {
           path:"/contact",
           element: <Contact></Contact>
+        },
+        {
+          path:"/order",
+          element: <Order></Order>
         }
       ]
     },

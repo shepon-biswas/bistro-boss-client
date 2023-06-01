@@ -1,7 +1,16 @@
 import { Helmet } from "react-helmet-async";
 import Cover from "../../Shared/Cover/Cover";
+import MenuCategory from "../MenuCategory/MenuCategory";
+import useMenu from "../../../hooks/useMenu";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 const Menu = () => {
+    const [menu] = useMenu();
+    const offered = menu.filter(item => item.category ==="offered");
+    const dessert = menu.filter(item => item.category ==="dessert");
+    const pizza = menu.filter(item => item.category ==="pizza");
+    const salad = menu.filter(item => item.category ==="salad");
+    const drinks = menu.filter(item => item.category ==="drinks");
     return (
         <>
         <Helmet>
@@ -13,6 +22,16 @@ const Menu = () => {
             desc={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit laboriosam veritatis quas quam atque eius."}
             
             ></Cover>
+            {/* Offered Items */}
+            <SectionTitle subHeading={"Don't Miss"} heading={"Tody's Offfer"}></SectionTitle>
+            <MenuCategory items={offered}></MenuCategory>
+            {/* Desserets Items */}
+            <MenuCategory items={dessert} title={"Dessert"} coverImg={"https://i.ibb.co/b5q59nW/dessert-bg.jpg"}></MenuCategory>
+            {/* Pizza Items */}
+            <MenuCategory items={pizza} title={"Pizza"} coverImg={"https://i.ibb.co/b5q59nW/dessert-bg.jpg"}></MenuCategory>
+            {/* Salad items */}
+            <MenuCategory items={salad} title={"Salad"} coverImg={"https://i.ibb.co/VCLLP7Q/salad-bg.jpg"}></MenuCategory>
+            <MenuCategory items={drinks} title={"drinks"} coverImg={"https://i.ibb.co/D9phNnZ/banner.jpg"}></MenuCategory>
 
         </>
     );
